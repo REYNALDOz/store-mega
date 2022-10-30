@@ -300,7 +300,12 @@ ul .navletters {
   text-decoration: line-through;
 }
 
-.iframeHeader {
-  width: 100%;
-  height: 100%;
+#buttonSum{
+  background-color: #ff9138;
+  color: #fff;
+  border: none;
+  border-radius: 0rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
 }

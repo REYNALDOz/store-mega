@@ -10,7 +10,12 @@
     <meta name="author" content="" />
     <title>StoreMega</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/images/headphones/favicon.ico"
+    />
+    <link rel="stylesheet" href="../../assets/css/contador.css" />
     <!-- Bootstrap icons-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
@@ -23,20 +28,14 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <!-- JavaScript Bundle with Popper -->
+    <link rel="stylesheet" href="../../assets/css/headphones.css" />
+    <link rel="stylesheet" href="../../assets/css/styles.css">
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../../assets/css/headphones.css" />
-    <link rel="stylesheet" href="../../assets/css/accesorios.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
@@ -57,7 +56,11 @@
     />
   </head>
   <body>
-    <!-- Navigation-->
+    
+    <!-- Va el navbar -->
+    <!-- Header-->
+    
+   
 
     <!-- Inicia Header 1-->
     <header class="cabecera1 p-2 mb-3 pb-0 border-bottom">
@@ -173,133 +176,119 @@
       </div>
     </div>
 
-    <!-- Termina Login -->
+</header> 
     <!-- Section-->
-    
-<div style="border-bottom:3px solid #ff9138;">
-  <div class="container px-4" style="margin-bottom: 20px;">
-    <div class="row gx-5">
-        <div class="col">
-            <img src="./../../assets/images/headphones/izuum.webp" alt="Card image" style="width:300px;">
+    <div class="container mt-5 mb-5">
+      <div class="card">
+        <div class="row g-0">
+          <div class="col-md-6 border-end">
+            <div class="d-flex flex-column justify-content-center">
+              <div class="main_image">
+                <img
+                  src="../../assets/images/headphones/179757-1200-auto.webp"
+                  id="main_product_image"
+                  width="350"
+                />
+              </div>
+              <div class="thumbnail_images">
+                <ul id="thumbnail">
+                  <li>
+                    <img
+                      onclick="changeImage(this)"
+                      src="../../assets/images/headphones/motorola1.webp"
+                      width="70"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      onclick="changeImage(this)"
+                      src="../../assets/images/headphones/motorola2.webp"
+                      width="70"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      onclick="changeImage(this)"
+                      src="../../assets/images/headphones/motorola3.webp"
+                      width="70"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      onclick="changeImage(this)"
+                      src="../../assets/images/headphones/motorola4.webp"
+                      width="70"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-3 right-side mt-5">
+              <div class="d-flex justify-content-between align-items-center">
+                <h3>BEATS</h3>
+                <span class="heart"><i class="bx bx-heart"></i></span>
+              </div>
+              <div class="mt-2 pr-3 content">
+                <p>
+                  Audífonos on ear con micrófono Motorola Pulse 200 Bass
+                  almohadillas acolchadas, conector 3.5 mm, control de llamadas,
+                  comandos de voz, negro
+                </p>
+              </div>
+              <h3>S/ 399,90</h3>
+              <div class="ratings d-flex flex-row align-items-center">
+                <div class="d-flex flex-row">
+                  <i class="bx bxs-star"></i> <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i> <i class="bx bxs-star"></i>
+                  <i class="bx bx-star"></i>
+                </div>
+                <span>41 visitas</span>
+              </div>
+              <div class="mt-5">
+                <span class="fw-bold">Color</span>
+                <div class="colors">
+                  <ul id="marker">
+                    <li id="marker-1"></li>
+                    <li id="marker-2"></li>
+                    <li id="marker-3"></li>
+                    <li id="marker-4"></li>
+                    <li id="marker-5"></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col">
+        <br>
+        <div>
+        <div class="container1">            
+          <!-- adding button and heading to show the digits -->
+          <!--increment() and decrement() functions on button click-->
+            <button id="buttonSum" onclick="increment()">+</button>  
+            <h2 id="counting"></h2>
+            <button id="buttonSum" onclick="decrement()">-</button>         
         </div>
-        <div class="col">
-            <h4 class="card-title" style="margin-top:30px;">Beats</h4>
-            <p>
-            <ul>
-                <li>Procesador: Core i5</li>
-                <li>Sistema operativo: Windows 10</li>
-                <li>Tarjeta de video: NVIDIA GeForce RTX 3050 (4 GB GDDR6)</li>
-            </ul>
-            </p>
-            <h3 class="card-text">S/ 3,299.00</h3>
-            <a href="#" class="btnLogin">Añadir al carrito</a>
-            <a href="./detailsIzuum.html" class="btnLogin">Ver más características</a>
-        </div>
-    </div>
-  </div>
-</div>
-<div style="border-bottom:3px solid #ff9138;">
-  <div class="container px-4" style="margin-bottom: 20px;">
-    <div class="row gx-5">
-        <div class="col">
-            <img src="./../../assets/images/headphones/179757-1200-auto.webp" alt="Card image" style="width:300px;">
-        </div>
-        <div class="col">
-            <h4 class="card-title" style="margin-top:30px;">Headphones</h4>
-            <p>
-            <ul>
-                <li>Procesador: Core i5</li>
-                <li>Sistema operativo: Windows 10</li>
-                <li>Tarjeta de video: NVIDIA GeForce RTX 3050 (4 GB GDDR6)</li>
-            </ul>
-            </p>
-            <h3 class="card-text">S/ 3,299.00</h3>
-            <a href="#" class="btnLogin">Añadir al carrito</a>
-            <a href="./detailsHeadphone.html" class="btnLogin">Ver más características</a>
-        </div>
-    </div>
-  </div>
-</div>
-<div style="border-bottom:3px solid #ff9138;">
-  <div class="container px-4" style="margin-bottom: 20px;">
-    <div class="row gx-5">
-        <div class="col">
-            <img src="./../../assets/images/headphones/motorola1.webp" alt="Card image" style="width:300px;">
-        </div>
-        <div class="col">
-            <h4 class="card-title" style="margin-top:30px;">MOTOROLA</h4>
-            <p>
-            <ul>
-                <li>Procesador: Core i5</li>
-                <li>Sistema operativo: Windows 10</li>
-                <li>Tarjeta de video: NVIDIA GeForce RTX 3050 (4 GB GDDR6)</li>
-            </ul>
-            </p>
-            <h3 class="card-text">S/ 3,299.00</h3>
-            <a href="#" class="btnLogin">Añadir al carrito</a>
-            <a href="./detailsBeats.html" class="btnLogin">Ver más características</a>
-        </div>
-    </div>
-  </div>
-</div>
-<div style="border-bottom:3px solid #ff9138;">
-  <div class="container px-4" style="margin-bottom: 20px;">
-    <div class="row gx-5">
-        <div class="col">
-            <img src="./../../assets/images/headphones/sony.webp" alt="Card image" style="width:300px;">
-        </div>
-        <div class="col">
-            <h4 class="card-title" style="margin-top:30px;">SONY</h4>
-            <p>
-            <ul>
-                <li>Procesador: Core i5</li>
-                <li>Sistema operativo: Windows 10</li>
-                <li>Tarjeta de video: NVIDIA GeForce RTX 3050 (4 GB GDDR6)</li>
-            </ul>
-            </p>
-            <h3 class="card-text">S/ 3,299.00</h3>
-            <a href="#" class="btnLogin">Añadir al carrito</a>
-            <a href="./detailsSony.html" class="btnLogin">Ver más características</a>
-        </div>
-    </div>
-  </div>
-</div>
-<div style="border-bottom:3px solid #ff9138;">
-  <div class="container px-4" style="margin-bottom: 20px;">
-    <div class="row gx-5">
-        <div class="col">
-            <img src="./../../assets/images/headphones/pioner.webp" alt="Card image" style="width:300px;">
-        </div>
-        <div class="col">
-            <h4 class="card-title" style="margin-top:30px;">PIONER</h4>
-            <p>
-            <ul>
-                <li>Procesador: Core i5</li>
-                <li>Sistema operativo: Windows 10</li>
-                <li>Tarjeta de video: NVIDIA GeForce RTX 3050 (4 GB GDDR6)</li>
-            </ul>
-            </p>
-            <h3 class="card-text">S/ 3,299.00</h3>
-            <a href="#" class="btnLogin">Añadir al carrito</a>
-            <a href="./detailsPioner.html" class="btnLogin">Ver más características</a>
-        </div>
-    </div>
-  </div>
-</div>
-    <!-- Footer-->
-    <!-- <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">
-          Copyright &copy; storemega 2022
-        </p>
+        <br>
       </div>
-    </footer> -->
+      </div>
+              <div
+                class="buttons d-flex flex-row mt-5 gap-3 justify-content-center"
+              >
+                <button class="btn btn-outline-dark"   onclick="window.history.back();">Atrás</button>
+                <button class="btn btn-warning">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer-->
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="../../assets/js/script.js"></script>
-    <!-- Inicia script -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Termina script -->
+    <script type="text/javascript" src="../../assets/js/cantidad.js"></script>
   </body>
 </html>

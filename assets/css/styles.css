@@ -1,9 +1,10 @@
 body {
-  background-color: #ecedee;
+  background-color: white;
 }
 .card {
   border: none;
   overflow: hidden;
+  background-color: #ecedee;
 }
 .thumbnail_images ul {
   list-style: none;

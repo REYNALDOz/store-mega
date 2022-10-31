@@ -7,7 +7,7 @@
 }
 
 * {
-  text-transform: capitalize;
+
   transition: all 0.2s linear;
   transition: width none;
 }

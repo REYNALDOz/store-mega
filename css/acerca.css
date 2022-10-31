@@ -6,11 +6,7 @@
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-* {
-  text-transform: capitalize;
-  transition: all 0.2s linear;
-  transition: width none;
-}
+
 
 html {
   font-size: 80.5%;
@@ -74,3 +70,18 @@ html::-webkit-scrollbar-thumb {
     width: 50%;
     margin: 0 auto;
 }
+
+.cont1 div{
+  
+  margin-left: 115px;
+  margin-right: 115px;
+  padding: 10px;
+  font-size: 20px;
+  transition: all 0.2s linear;
+  transition: width none;
+  text-align: justify;
+  
+}
+
+
+

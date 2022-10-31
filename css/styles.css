@@ -381,6 +381,12 @@ body {
   border-radius: 0px !important;
 }
 
-.image-banner {
-  margin-top: 30rem;
+.footer_top{
+  padding-bottom:20rem;"
+}
+
+
+@media (max-width: 991px) {
+  .footer_top{
+  padding-bottom:37rem;"
 }

@@ -30,7 +30,6 @@ var swiper = new Swiper(".featured-slider", {
     768: {
       slidesPerView: 3,
     },
-
     1024: {
       slidesPerView: 4,
     },

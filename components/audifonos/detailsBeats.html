@@ -54,6 +54,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    <script  src="./changeImages.js"></script>
+    <script>
+      function changeImage(image) {
+        console.log('HOLAAAAAA');
+        var img = document.getElementById("main_product_image");
+        img.src = image;
+      }
+    </script>
   </head>
   <body>
     
@@ -194,28 +202,28 @@
                 <ul id="thumbnail">
                   <li>
                     <img
-                      onclick="changeImage(this)"
+                      onclick="changeImage('../../assets/images/headphones/motorola1.webp')"
                       src="../../assets/images/headphones/motorola1.webp"
                       width="70"
                     />
                   </li>
                   <li>
                     <img
-                      onclick="changeImage(this)"
+                      onclick="changeImage('../../assets/images/headphones/motorola2.webp')"
                       src="../../assets/images/headphones/motorola2.webp"
                       width="70"
                     />
                   </li>
                   <li>
                     <img
-                      onclick="changeImage(this)"
+                      onclick="changeImage('../../assets/images/headphones/motorola3.webp')"
                       src="../../assets/images/headphones/motorola3.webp"
                       width="70"
                     />
                   </li>
                   <li>
                     <img
-                      onclick="changeImage(this)"
+                      onclick="changeImage('../../assets/images/headphones/motorola4.webp')"
                       src="../../assets/images/headphones/motorola4.webp"
                       width="70"
                     />
@@ -290,5 +298,6 @@
     <!-- Core theme JS-->
     <script src="../../assets/js/script.js"></script>
     <script type="text/javascript" src="../../assets/js/cantidad.js"></script>
+    
   </body>
 </html>

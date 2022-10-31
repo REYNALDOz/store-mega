@@ -381,12 +381,20 @@ body {
   border-radius: 0px !important;
 }
 
-.footer_top{
-  padding-bottom:20rem;"
+.footer_top {
+  padding-bottom: 20rem;
 }
 
-
 @media (max-width: 991px) {
-  .footer_top{
-  padding-bottom:37rem;"
+  .footer_top {
+    padding-bottom: 37rem;
+  }
+}
+
+.card-bg {
+  background-color: #fff;
+}
+
+.card-footer-2 h6 {
+  color: #000 !important;
 }

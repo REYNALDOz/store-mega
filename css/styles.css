@@ -209,5 +209,17 @@ footer {
 
 .sliderProducts {
   width: 100% !important;
-  height: 580px !important;
+  height: 585px !important;
+}
+
+.card-footer {
+  background: #ff9138;
+}
+
+.card-footer h6 {
+  color: #fff;
+}
+
+.second-slider {
+  margin-bottom: 3rem;
 }

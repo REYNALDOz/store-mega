@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7f1001592f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -17,7 +31,8 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../css/styleContact.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
@@ -64,11 +79,11 @@
           class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
         >
           <a
-            href="index.html"
+            href="../index.html"
             class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none"
           >
             <img
-              src="images/logo.png"
+              src="../images/logo.png"
               alt="Logo"
               width="134"
               height="52"
@@ -151,172 +166,64 @@
 
     <!-- Termina Login -->
 
-    <!-- Comienza slider -->
-
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide container"
-      data-bs-ride="true"
-    >
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="images/banner_1.jpg"
-            class="d-block w-100 h-100"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="images/banner_2.jpg"
-            class="d-block w-100 h-100"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="images/banner_3.jpg"
-            class="d-block w-100 h-100"
-            alt="..."
-          />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <!-- Termina slider -->
-
-    <!-- Inicia sección Lo más vendido -->
+    <!--Inicia form-->
     <div class="container">
-      <header class="p-1 mb-0 mt-5 d-flex justify-content-between">
-        <h3 class="secciones">
-          <span class="first-string">Mega</span> vendido
-        </h3>
-        <h5 class="view-all">Ver todo</h5>
-      </header>
-    </div>
-    <!-- Termina sección Lo más vendido -->
+      <div class="contact-wrapper">
+        <div class="contact-form">
+          <h3>Contáctanos</h3>
+          <form action="">
+            <p>
+              <label for="">Nombres</label>
+              <input type="text" name="nombres" id="" required />
+            </p>
 
-    <!-- Inicia cards Lo más vendido -->
-    <div>
-      <iframe
-        class="sliderProducts"
-        src="sections/sliderProducts.html"
-        frameborder="0"
-      ></iframe>
-    </div>
-    <!-- Termina cards Lo más vendido -->
+            <p>
+              <label for="">Apellidos</label>
+              <input type="text" name="apellidos" id="" required />
+            </p>
 
-    <!-- Inicia sección recomendados -->
-    <div class="container">
-      <header class="p-1 mb-3 mt-0 d-flex justify-content-between">
-        <h3 class="secciones">
-          <span class="first-string">Mega</span> recomendados
-        </h3>
-        <h5 class="view-all">Ver todo</h5>
-      </header>
-    </div>
+            <p>
+              <label for="">Email</label>
+              <input type="email" name="email" id="" required />
+            </p>
 
-    <div class="container second-slider">
-      <div class="row row-cols-1 row-cols-md-4 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/xbox.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title" align="center">Microsoft</h5>
-              <p class="card-text" align="center">
-                Consola Xbox Serie X 1TB negro
-              </p>
-            </div>
-            <div class="card-footer">
-              <h6 align="center"><b>S/. 3,000.00</b></h6>
-            </div>
-          </div>
+            <p>
+              <label for="">Asunto</label>
+              <input type="text" name="asunto" id="" required />
+            </p>
+
+            <p class="block">
+              <label for="">Mensaje</label>
+              <textarea
+                name="mensaje"
+                rows="3"
+                placeholder="Deja tu mensaje"
+                required
+              ></textarea>
+            </p>
+
+            <p class="block">
+              <button type="submit">Enviar</button>
+            </p>
+          </form>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/amazon.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title" align="center">Amazon</h5>
-              <p class="card-text" align="center">
-                Pantalla inteligente Echo Show 8
-              </p>
-            </div>
-            <div class="card-footer">
-              <h6 align="center"><b>S/. 519.00</b></h6>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/xiaomi.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title" align="center">Xiaomi</h5>
-              <p class="card-text" align="center">
-                Altavoz inteligente Xiaomi IR Control
-              </p>
-            </div>
-            <div class="card-footer">
-              <h6 align="center"><b>S/. 179.00</b></h6>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/jetion.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title" align="center">Jetion</h5>
-              <p class="card-text" align="center">
-                Cámara web conexión usb 2.0, 720p
-              </p>
-            </div>
-            <div class="card-footer">
-              <h6 align="center"><b>S/. 49.90</b></h6>
-            </div>
-          </div>
+        <div class="contact-info">
+          <h4>Más información</h4>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> Lima</li>
+            <li><i class="fa-solid fa-phone"></i> +51 987 456 321</li>
+            <li><i class="fa-solid fa-envelope"></i> contacto@storemega.com</li>
+          </ul>
+
+          <p>
+            Contacta con nosotros y nos comunicaremos en breve. No olvides que
+            en <b>Store Mega</b> tenemos los mejores productos tecnológicos para
+            ti y tu familia.
+          </p>
         </div>
       </div>
     </div>
-    <!-- Termina sección recomendados -->
+    <!--Termina form-->
 
     <!-- Inicia footer -->
     <div class="container">
@@ -404,11 +311,11 @@
           </div>
 
           <a
-            href="index.html"
+            href="../index.html"
             class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none"
           >
             <img
-              src="images/logo.png"
+              src="../images/logo.png"
               alt="Logo"
               width="134"
               height="52"
@@ -430,17 +337,16 @@
         <p>© 2022 Company, Inc. All rights reserved.</p>
       </footer>
     </div>
-    <<<<<<< HEAD
 
     <!-- Termina cards Lo más vendido -->
-    =======
+
     <br />
     <!-- Termina footer -->
 
-    >>>>>>> 85516c9d56631caa8ba6ea6991087ce94eb9851d
     <!-- Inicia script -->
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
     <!-- Termina script -->
   </body>
 </html>
